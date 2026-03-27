@@ -43,6 +43,7 @@ let vantaEffect;
 
 window.addEventListener('DOMContentLoaded', () => {
   if (window.VANTA && !vantaEffect) {
+    /*
     vantaEffect = window.VANTA.RINGS({
       el: '#hero',
       mouseControls: true,
@@ -52,15 +53,29 @@ window.addEventListener('DOMContentLoaded', () => {
       minWidth: 200.0,
       scale: 1.0,
       scaleMobile: 1.0,
-      color: 0x4c7fff,
-      color2: 0x57d1ff,
-      backgroundColor: 0x70b14,
+      color: 0x2f651e,
+      color2: 0xc9e24d,
+      backgroundColor: 0x061008,
       amplitudeFactor: 0.8,
       ringFactor: 0.85,
       waveHeight: 16,
       spacing: 22,
       maxDistance: 24
     });
+     */
+
+    vantaEffect = window.VANTA.NET({
+      el: '#hero',
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0x061008,
+      color: 0x2f651e,
+    })
   }
 });
 

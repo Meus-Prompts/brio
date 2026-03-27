@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Brio — Consultoria premium em tecnologia para empresas que querem crescer com estratégia, design, engenharia e inovação."
+      content="Brio — Consultoria em tecnologia para empresas que querem crescer com clareza, velocidade e boa execução."
     />
     <title>Brio | Tecnologia para crescimento de negócios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,12 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header" id="topo">
       <div class="container nav-wrap">
-        <a class="logo" href="#topo" aria-label="Página inicial Brio">Brio</a>
+        <a class="logo" href="#topo" aria-label="Página inicial Brio">
+          <img src="brio_verde.png" alt="Brio" />
+        </a>
 
         <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
           <span></span><span></span>
@@ -32,7 +35,12 @@
           <a href="#manifesto">Manifesto</a>
         </nav>
 
-        <a class="btn btn-nav" href="mailto:filipesoares.crespo@gmail.com">Entrar em contato</a>
+        <a
+          class="btn btn-nav"
+          href="https://wa.me/351913449529"
+          target="_blank"
+          rel="noopener noreferrer"
+        ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>&nbsp;Entrar em contato</a>
       </div>
     </header>
 
@@ -41,15 +49,17 @@
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container hero-content reveal">
           <p class="eyebrow">Consultoria tecnológica premium</p>
-          <h1>
-            Aceleramos o crescimento do seu negócio com tecnologia, estratégia e execução de alto padrão.
-          </h1>
+          <h1>Tecnologia que acelera seu negócio.</h1>
           <p class="hero-subtitle">
-            Na Brio, unimos visão de negócio, design, engenharia e inovação para entregar soluções completas.
-            Atuamos de forma ágil, com foco em resultados concretos e evolução contínua.
+            Estratégia, design e engenharia para gerar resultado real.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:filipesoares.crespo@gmail.com">Entrar em contato</a>
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/351913449529"
+              target="_blank"
+              rel="noopener noreferrer"
+            ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>&nbsp;Entrar em contato</a>
             <a class="btn btn-secondary" href="#servicos">Conhecer serviços</a>
           </div>
         </div>
@@ -59,58 +69,88 @@
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">O que fazemos</p>
-            <h2>Soluções ponta a ponta para elevar maturidade e performance digital.</h2>
+            <h2>Da estratégia à execução, ajudamos sua empresa a crescer com tecnologia.</h2>
           </div>
 
           <div class="cards-grid services-grid">
-            <article class="card reveal">
-              <h3>Experiência & Design</h3>
-              <p>UX, design de interfaces e estratégia digital para produtos elegantes, funcionais e orientados a conversão.</p>
+            <article class="card service-card reveal">
+              <div class="service-card-head">
+                <div class="service-icon" aria-hidden="true">
+                  <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <h3>Experiência & Design</h3>
+              </div>
+              <p>Experiências simples, claras e bem desenhadas para produtos digitais que funcionam melhor.</p>
               <ul>
                 <li>UX</li>
                 <li>Design</li>
                 <li>Estratégia digital</li>
               </ul>
             </article>
-            <article class="card reveal">
-              <h3>Gestão & Entrega</h3>
-              <p>Gestão de projetos com governança clara, ritmo ágil e alinhamento contínuo entre tecnologia e negócio.</p>
+            <article class="card service-card reveal">
+              <div class="service-card-head">
+                <div class="service-icon" aria-hidden="true">
+                  <i class="fa-solid fa-list-check"></i>
+                </div>
+                <h3>Gestão & Entrega</h3>
+              </div>
+              <p>Projetos com prioridade clara, ritmo constante e boa comunicação entre negócio e tecnologia.</p>
               <ul>
                 <li>Gestão de Projetos</li>
                 <li>Priorização</li>
                 <li>Execução iterativa</li>
               </ul>
             </article>
-            <article class="card reveal">
-              <h3>Engenharia de Software</h3>
-              <p>Desenvolvimento backend e arquitetura de sistemas robustos para escalar operações com segurança e eficiência.</p>
+            <article class="card service-card reveal">
+              <div class="service-card-head">
+                <div class="service-icon" aria-hidden="true">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Engenharia de Software</h3>
+              </div>
+              <p>Sistemas estáveis, integrações confiáveis e base técnica pronta para crescer com segurança.</p>
               <ul>
                 <li>Backend</li>
                 <li>Arquitetura de sistemas</li>
                 <li>Integrações críticas</li>
               </ul>
             </article>
-            <article class="card reveal">
-              <h3>Plataforma & Operações</h3>
-              <p>DevOps e infraestrutura resiliente para acelerar deploys, reduzir riscos e garantir disponibilidade.</p>
+            <article class="card service-card reveal">
+              <div class="service-card-head">
+                <div class="service-icon" aria-hidden="true">
+                  <i class="fa-solid fa-server"></i>
+                </div>
+                <h3>Plataforma & Operações</h3>
+              </div>
+              <p>Infraestrutura e operações para publicar melhor, reduzir risco e ganhar previsibilidade.</p>
               <ul>
                 <li>DevOps</li>
                 <li>Infraestrutura</li>
                 <li>Confiabilidade operacional</li>
               </ul>
             </article>
-            <article class="card reveal">
-              <h3>Inteligência Aplicada</h3>
-              <p>Uso estratégico de IA para ganho de produtividade, automação e diferenciação competitiva.</p>
+            <article class="card service-card reveal">
+              <div class="service-card-head">
+                <div class="service-icon" aria-hidden="true">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h3>Inteligência Aplicada</h3>
+              </div>
+              <p>IA aplicada para automatizar tarefas, ganhar velocidade e abrir novas possibilidades de negócio.</p>
               <ul>
                 <li>IA</li>
                 <li>Automação</li>
                 <li>Decisão orientada por dados</li>
               </ul>
             </article>
-            <article class="card reveal">
-              <h3>Consultoria em Tecnologia</h3>
-              <p>Diagnóstico técnico e roadmap executivo para transformar desafios complexos em crescimento sustentável.</p>
+            <article class="card service-card reveal">
+              <div class="service-card-head">
+                <div class="service-icon" aria-hidden="true">
+                  <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <h3>Consultoria em Tecnologia</h3>
+              </div>
+              <p>Direção técnica clara para transformar problemas complexos em próximos passos viáveis.</p>
               <ul>
                 <li>Consultoria em tecnologia</li>
                 <li>Planejamento de evolução</li>
@@ -125,29 +165,29 @@
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">Como trabalhamos</p>
-            <h2>Agilidade com método, previsibilidade e foco em resultado de negócio.</h2>
+            <h2>Trabalhamos com clareza, foco e entregas consistentes.</h2>
           </div>
 
           <div class="timeline">
             <article class="step reveal">
               <span>01</span>
               <h3>Discovery e estratégia</h3>
-              <p>Mapeamos contexto, objetivos e oportunidades para definir direcionamento técnico e estratégico consistente.</p>
+              <p>Entendemos o contexto, os objetivos e o que mais vale atacar primeiro.</p>
             </article>
             <article class="step reveal">
               <span>02</span>
               <h3>Priorização orientada a impacto</h3>
-              <p>Transformamos visão em backlog priorizado, conectando esforço de execução ao potencial de retorno.</p>
+              <p>Organizamos prioridades para concentrar esforço no que gera mais resultado.</p>
             </article>
             <article class="step reveal">
               <span>03</span>
               <h3>Execução iterativa</h3>
-              <p>Entregamos em ciclos curtos com transparência, validação constante e alinhamento contínuo com stakeholders.</p>
+              <p>Executamos em ciclos curtos, com visibilidade do andamento e ajustes rápidos.</p>
             </article>
             <article class="step reveal">
               <span>04</span>
               <h3>Evolução contínua e inovação</h3>
-              <p>Medimos resultados, refinamos decisões e aplicamos inovação tecnológica de forma prática e sustentada.</p>
+              <p>Medimos o que funciona, ajustamos a rota e evoluímos de forma contínua.</p>
             </article>
           </div>
         </div>
@@ -157,25 +197,25 @@
         <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">Diferenciais Brio</p>
-            <h2>Tecnologia com visão executiva para gerar crescimento real.</h2>
+            <h2>Tecnologia bem aplicada para fazer o negócio avançar.</h2>
           </div>
 
           <div class="cards-grid benefits-grid">
             <article class="card reveal">
               <h3>Negócio + tecnologia</h3>
-              <p>Decisões técnicas conectadas a metas comerciais, eficiência operacional e vantagem competitiva.</p>
+              <p>Tecnologia conectada ao que a empresa precisa vender, operar e crescer.</p>
             </article>
             <article class="card reveal">
               <h3>Alto padrão de entrega</h3>
-              <p>Qualidade de execução, arquitetura sólida e experiência refinada em cada etapa do projeto.</p>
+              <p>Entregas bem feitas, com base técnica sólida e atenção aos detalhes.</p>
             </article>
             <article class="card reveal">
               <h3>Times e processos maduros</h3>
-              <p>Rituais claros, governança eficaz e comunicação executiva para acelerar decisões com segurança.</p>
+              <p>Processos simples e comunicação clara para tomar decisões com mais segurança.</p>
             </article>
             <article class="card reveal">
               <h3>Escala e eficiência</h3>
-              <p>Estruturamos plataformas preparadas para crescimento, reduzindo gargalos e custos de operação.</p>
+              <p>Estruturas mais eficientes para crescer sem criar gargalos desnecessários.</p>
             </article>
           </div>
         </div>
@@ -185,21 +225,24 @@
         <div class="container reveal">
           <p class="eyebrow">Manifesto</p>
           <h2>
-            Tecnologia bem aplicada acelera negócios. Inovação não é tendência: é vantagem competitiva.
+            Tecnologia boa resolve problema, melhora operação e abre espaço para crescer.
           </h2>
           <p>
-            A Brio atua como parceira estratégica para empresas que querem crescer com consistência e sofisticação.
-            Entregamos soluções de primeiro mundo para organizações que valorizam excelência, clareza de direção e
-            execução impecável.
+            Atuamos ao lado de empresas que querem tomar boas decisões e executar melhor com tecnologia.
           </p>
         </div>
       </section>
 
       <section class="section final-cta" id="contato">
         <div class="container reveal">
-          <h2>Seu próximo ciclo de crescimento começa com a decisão certa em tecnologia.</h2>
-          <p>Vamos conversar sobre como transformar visão estratégica em resultados concretos para o seu negócio.</p>
-          <a class="btn btn-primary" href="mailto:filipesoares.crespo@gmail.com">Entrar em contato</a>
+          <h2>Se a tecnologia precisa destravar crescimento, vamos conversar.</h2>
+          <p>Podemos entender o seu momento e definir o melhor próximo passo.</p>
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/351913449529"
+            target="_blank"
+            rel="noopener noreferrer"
+          ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>&nbsp;Entrar em contato</a>
         </div>
       </section>
     </main>
@@ -207,8 +250,10 @@
     <footer class="footer">
       <div class="container footer-grid">
         <div>
-          <a class="logo" href="#topo">Brio</a>
-          <p>Consultoria tecnológica premium para empresas que buscam crescimento com inovação e alto padrão.</p>
+          <a class="logo" href="#topo" aria-label="Página inicial Brio">
+            <img src="brio_verde.png" alt="Brio" />
+          </a>
+          <p>Consultoria em tecnologia para empresas que querem crescer com mais clareza e melhor execução.</p>
         </div>
         <div>
           <h4>Navegação</h4>
@@ -221,7 +266,9 @@
         </div>
         <div>
           <h4>Contato</h4>
-          <a href="mailto:filipesoares.crespo@gmail.com">filipesoares.crespo@gmail.com</a>
+          <a href="mailto:filipesoares.crespo@gmail.com" target="_blank" rel="noopener noreferrer">filipesoares.crespo@gmail.com</a>
+          <br />
+          <a href="https://wa.me/351913449529" target="_blank" rel="noopener noreferrer">+351 913 449 529</a>
         </div>
       </div>
       <div class="container footer-bottom">
@@ -230,7 +277,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
