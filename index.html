@@ -6,8 +6,10 @@
     <meta
       name="description"
       content="Brio — Consultoria em tecnologia para empresas que querem crescer com clareza, velocidade e boa execução."
+      data-i18n-attr="content"
+      data-i18n="meta.description"
     />
-    <title>Brio | Tecnologia para crescimento de negócios</title>
+    <title data-i18n="meta.title">Brio | Tecnologia para crescimento de negócios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,27 +22,32 @@
   <body>
     <header class="header" id="topo">
       <div class="container nav-wrap">
-        <a class="logo" href="#topo" aria-label="Página inicial Brio">
+        <a class="logo" href="#topo" aria-label="Página inicial Brio" data-i18n-attr="aria-label" data-i18n="header.homeAriaLabel">
           <img src="brio_verde.png" alt="Brio" />
         </a>
 
-        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" data-i18n-attr="aria-label" data-i18n="header.menuToggleOpen">
           <span></span><span></span>
         </button>
 
         <nav class="nav" aria-label="Navegação principal">
-          <a href="#servicos">O que fazemos</a>
-          <a href="#metodo">Como trabalhamos</a>
-          <a href="#diferenciais">Diferenciais</a>
-          <a href="#manifesto">Manifesto</a>
+          <a href="#servicos" data-i18n="nav.services">O que fazemos</a>
+          <a href="#metodo" data-i18n="nav.method">Como trabalhamos</a>
+          <a href="#diferenciais" data-i18n="nav.differentials">Diferenciais</a>
+          <a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a>
         </nav>
 
-        <a
-          class="btn btn-nav"
-          href="https://wa.me/351913449529"
-          target="_blank"
-          rel="noopener noreferrer"
-        ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>Entrar em contato</span></a>
+        <div class="header-actions">
+          <div class="language-switcher">
+            <label class="sr-only" for="language-select" data-i18n="header.languageLabel">Idioma do site</label>
+            <select id="language-select" aria-label="Idioma do site" data-i18n-attr="aria-label" data-i18n="header.languageLabel">
+              <option value="pt-BR">🇧🇷 Português (Brasil)</option>
+              <option value="pt-PT">🇵🇹 Português (Portugal)</option>
+              <option value="en">🇺🇸 English</option>
+              <option value="es">🇪🇸 Español</option>
+            </select>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -48,9 +55,9 @@
       <section class="hero" id="hero">
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container hero-content reveal">
-          <p class="eyebrow">Consultoria tecnológica premium</p>
-          <h1>Tecnologia que acelera seu negócio.</h1>
-          <p class="hero-subtitle">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Consultoria tecnológica premium</p>
+          <h1 data-i18n="hero.title">Tecnologia que acelera seu negócio.</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
             Estratégia, design e engenharia para gerar resultado real.
           </p>
           <div class="hero-actions">
@@ -59,8 +66,8 @@
               href="https://wa.me/351913449529"
               target="_blank"
               rel="noopener noreferrer"
-            ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>Entrar em contato</span></a>
-            <a class="btn btn-secondary" href="#servicos">Conhecer serviços</a>
+            ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span data-i18n="cta.contact">Entrar em contato</span></a>
+            <a class="btn btn-secondary" href="#servicos" data-i18n="cta.services">Conhecer serviços</a>
           </div>
         </div>
       </section>
@@ -68,8 +75,8 @@
       <section class="section" id="servicos">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">O que fazemos</p>
-            <h2>Da estratégia à execução, ajudamos sua empresa a crescer com tecnologia.</h2>
+            <p class="eyebrow" data-i18n="servicesSection.eyebrow">O que fazemos</p>
+            <h2 data-i18n="servicesSection.title">Da estratégia à execução, ajudamos sua empresa a crescer com tecnologia.</h2>
           </div>
 
           <div class="cards-grid services-grid">
@@ -78,13 +85,13 @@
                 <div class="service-icon" aria-hidden="true">
                   <i class="fa-solid fa-pen-ruler"></i>
                 </div>
-                <h3>Experiência & Design</h3>
+                <h3 data-i18n="services.design.title">Experiência & Design</h3>
               </div>
-              <p>Experiências simples, claras e bem desenhadas para produtos digitais que funcionam melhor.</p>
+              <p data-i18n="services.design.description">Experiências simples, claras e bem desenhadas para produtos digitais que funcionam melhor.</p>
               <ul>
-                <li>UX</li>
-                <li>Design</li>
-                <li>Estratégia digital</li>
+                <li data-i18n="services.design.items.0">UX</li>
+                <li data-i18n="services.design.items.1">Design</li>
+                <li data-i18n="services.design.items.2">Estratégia digital</li>
               </ul>
             </article>
             <article class="card service-card reveal">
@@ -92,13 +99,13 @@
                 <div class="service-icon" aria-hidden="true">
                   <i class="fa-solid fa-list-check"></i>
                 </div>
-                <h3>Gestão & Entrega</h3>
+                <h3 data-i18n="services.delivery.title">Gestão & Entrega</h3>
               </div>
-              <p>Projetos com prioridade clara, ritmo constante e boa comunicação entre negócio e tecnologia.</p>
+              <p data-i18n="services.delivery.description">Projetos com prioridade clara, ritmo constante e boa comunicação entre negócio e tecnologia.</p>
               <ul>
-                <li>Gestão de Projetos</li>
-                <li>Priorização</li>
-                <li>Execução iterativa</li>
+                <li data-i18n="services.delivery.items.0">Gestão de Projetos</li>
+                <li data-i18n="services.delivery.items.1">Priorização</li>
+                <li data-i18n="services.delivery.items.2">Execução iterativa</li>
               </ul>
             </article>
             <article class="card service-card reveal">
@@ -106,13 +113,13 @@
                 <div class="service-icon" aria-hidden="true">
                   <i class="fa-solid fa-code"></i>
                 </div>
-                <h3>Engenharia de Software</h3>
+                <h3 data-i18n="services.engineering.title">Engenharia de Software</h3>
               </div>
-              <p>Sistemas estáveis, integrações confiáveis e base técnica pronta para crescer com segurança.</p>
+              <p data-i18n="services.engineering.description">Sistemas estáveis, integrações confiáveis e base técnica pronta para crescer com segurança.</p>
               <ul>
-                <li>Backend</li>
-                <li>Arquitetura de sistemas</li>
-                <li>Integrações críticas</li>
+                <li data-i18n="services.engineering.items.0">Backend</li>
+                <li data-i18n="services.engineering.items.1">Arquitetura de sistemas</li>
+                <li data-i18n="services.engineering.items.2">Integrações críticas</li>
               </ul>
             </article>
             <article class="card service-card reveal">
@@ -120,13 +127,13 @@
                 <div class="service-icon" aria-hidden="true">
                   <i class="fa-solid fa-server"></i>
                 </div>
-                <h3>Plataforma & Operações</h3>
+                <h3 data-i18n="services.operations.title">Plataforma & Operações</h3>
               </div>
-              <p>Infraestrutura e operações para publicar melhor, reduzir risco e ganhar previsibilidade.</p>
+              <p data-i18n="services.operations.description">Infraestrutura e operações para publicar melhor, reduzir risco e ganhar previsibilidade.</p>
               <ul>
-                <li>DevOps</li>
-                <li>Infraestrutura</li>
-                <li>Confiabilidade operacional</li>
+                <li data-i18n="services.operations.items.0">DevOps</li>
+                <li data-i18n="services.operations.items.1">Infraestrutura</li>
+                <li data-i18n="services.operations.items.2">Confiabilidade operacional</li>
               </ul>
             </article>
             <article class="card service-card reveal">
@@ -134,13 +141,13 @@
                 <div class="service-icon" aria-hidden="true">
                   <i class="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
-                <h3>Inteligência Aplicada</h3>
+                <h3 data-i18n="services.ai.title">Inteligência Aplicada</h3>
               </div>
-              <p>IA aplicada para automatizar tarefas, ganhar velocidade e abrir novas possibilidades de negócio.</p>
+              <p data-i18n="services.ai.description">IA aplicada para automatizar tarefas, ganhar velocidade e abrir novas possibilidades de negócio.</p>
               <ul>
-                <li>IA</li>
-                <li>Automação</li>
-                <li>Decisão orientada por dados</li>
+                <li data-i18n="services.ai.items.0">IA</li>
+                <li data-i18n="services.ai.items.1">Automação</li>
+                <li data-i18n="services.ai.items.2">Decisão orientada por dados</li>
               </ul>
             </article>
             <article class="card service-card reveal">
@@ -148,13 +155,13 @@
                 <div class="service-icon" aria-hidden="true">
                   <i class="fa-solid fa-compass-drafting"></i>
                 </div>
-                <h3>Consultoria em Tecnologia</h3>
+                <h3 data-i18n="services.consulting.title">Consultoria em Tecnologia</h3>
               </div>
-              <p>Direção técnica clara para transformar problemas complexos em próximos passos viáveis.</p>
+              <p data-i18n="services.consulting.description">Direção técnica clara para transformar problemas complexos em próximos passos viáveis.</p>
               <ul>
-                <li>Consultoria em tecnologia</li>
-                <li>Planejamento de evolução</li>
-                <li>Governança técnica</li>
+                <li data-i18n="services.consulting.items.0">Consultoria em tecnologia</li>
+                <li data-i18n="services.consulting.items.1">Planejamento de evolução</li>
+                <li data-i18n="services.consulting.items.2">Governança técnica</li>
               </ul>
             </article>
           </div>
@@ -164,30 +171,30 @@
       <section class="section" id="metodo">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">Como trabalhamos</p>
-            <h2>Trabalhamos com clareza, foco e entregas consistentes.</h2>
+            <p class="eyebrow" data-i18n="methodSection.eyebrow">Como trabalhamos</p>
+            <h2 data-i18n="methodSection.title">Trabalhamos com clareza, foco e entregas consistentes.</h2>
           </div>
 
           <div class="timeline">
             <article class="step reveal">
               <span>01</span>
-              <h3>Discovery e estratégia</h3>
-              <p>Entendemos o contexto, os objetivos e o que mais vale atacar primeiro.</p>
+              <h3 data-i18n="method.steps.0.title">Discovery e estratégia</h3>
+              <p data-i18n="method.steps.0.description">Entendemos o contexto, os objetivos e o que mais vale atacar primeiro.</p>
             </article>
             <article class="step reveal">
               <span>02</span>
-              <h3>Priorização orientada a impacto</h3>
-              <p>Organizamos prioridades para concentrar esforço no que gera mais resultado.</p>
+              <h3 data-i18n="method.steps.1.title">Priorização orientada a impacto</h3>
+              <p data-i18n="method.steps.1.description">Organizamos prioridades para concentrar esforço no que gera mais resultado.</p>
             </article>
             <article class="step reveal">
               <span>03</span>
-              <h3>Execução iterativa</h3>
-              <p>Executamos em ciclos curtos, com visibilidade do andamento e ajustes rápidos.</p>
+              <h3 data-i18n="method.steps.2.title">Execução iterativa</h3>
+              <p data-i18n="method.steps.2.description">Executamos em ciclos curtos, com visibilidade do andamento e ajustes rápidos.</p>
             </article>
             <article class="step reveal">
               <span>04</span>
-              <h3>Evolução contínua e inovação</h3>
-              <p>Medimos o que funciona, ajustamos a rota e evoluímos de forma contínua.</p>
+              <h3 data-i18n="method.steps.3.title">Evolução contínua e inovação</h3>
+              <p data-i18n="method.steps.3.description">Medimos o que funciona, ajustamos a rota e evoluímos de forma contínua.</p>
             </article>
           </div>
         </div>
@@ -196,26 +203,26 @@
       <section class="section" id="diferenciais">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">Diferenciais Brio</p>
-            <h2>Tecnologia bem aplicada para fazer o negócio avançar.</h2>
+            <p class="eyebrow" data-i18n="benefitsSection.eyebrow">Diferenciais Brio</p>
+            <h2 data-i18n="benefitsSection.title">Tecnologia bem aplicada para fazer o negócio avançar.</h2>
           </div>
 
           <div class="cards-grid benefits-grid">
             <article class="card reveal">
-              <h3>Negócio + tecnologia</h3>
-              <p>Tecnologia conectada ao que a empresa precisa vender, operar e crescer.</p>
+              <h3 data-i18n="benefits.items.0.title">Negócio + tecnologia</h3>
+              <p data-i18n="benefits.items.0.description">Tecnologia conectada ao que a empresa precisa vender, operar e crescer.</p>
             </article>
             <article class="card reveal">
-              <h3>Alto padrão de entrega</h3>
-              <p>Entregas bem feitas, com base técnica sólida e atenção aos detalhes.</p>
+              <h3 data-i18n="benefits.items.1.title">Alto padrão de entrega</h3>
+              <p data-i18n="benefits.items.1.description">Entregas bem feitas, com base técnica sólida e atenção aos detalhes.</p>
             </article>
             <article class="card reveal">
-              <h3>Times e processos maduros</h3>
-              <p>Processos simples e comunicação clara para tomar decisões com mais segurança.</p>
+              <h3 data-i18n="benefits.items.2.title">Times e processos maduros</h3>
+              <p data-i18n="benefits.items.2.description">Processos simples e comunicação clara para tomar decisões com mais segurança.</p>
             </article>
             <article class="card reveal">
-              <h3>Escala e eficiência</h3>
-              <p>Estruturas mais eficientes para crescer sem criar gargalos desnecessários.</p>
+              <h3 data-i18n="benefits.items.3.title">Escala e eficiência</h3>
+              <p data-i18n="benefits.items.3.description">Estruturas mais eficientes para crescer sem criar gargalos desnecessários.</p>
             </article>
           </div>
         </div>
@@ -223,11 +230,11 @@
 
       <section class="section manifesto" id="manifesto">
         <div class="container reveal">
-          <p class="eyebrow">Manifesto</p>
-          <h2>
+          <p class="eyebrow" data-i18n="manifesto.eyebrow">Manifesto</p>
+          <h2 data-i18n="manifesto.title">
             Tecnologia boa resolve problema, melhora operação e abre espaço para crescer.
           </h2>
-          <p>
+          <p data-i18n="manifesto.description">
             Atuamos ao lado de empresas que querem tomar boas decisões e executar melhor com tecnologia.
           </p>
         </div>
@@ -235,14 +242,14 @@
 
       <section class="section final-cta" id="contato">
         <div class="container reveal">
-          <h2>Se a tecnologia precisa destravar crescimento, vamos conversar.</h2>
-          <p>Podemos entender o seu momento e definir o melhor próximo passo.</p>
+          <h2 data-i18n="finalCta.title">Se a tecnologia precisa destravar crescimento, vamos conversar.</h2>
+          <p data-i18n="finalCta.description">Podemos entender o seu momento e definir o melhor próximo passo.</p>
           <a
             class="btn btn-primary"
             href="https://wa.me/351913449529"
             target="_blank"
             rel="noopener noreferrer"
-          ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>Entrar em contato</span></a>
+          ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span data-i18n="cta.contact">Entrar em contato</span></a>
         </div>
       </section>
     </main>
@@ -250,29 +257,29 @@
     <footer class="footer">
       <div class="container footer-grid">
         <div>
-          <a class="logo" href="#topo" aria-label="Página inicial Brio">
+          <a class="logo" href="#topo" aria-label="Página inicial Brio" data-i18n-attr="aria-label" data-i18n="footer.homeAriaLabel">
             <img src="brio_verde.png" alt="Brio" />
           </a>
-          <p>Consultoria em tecnologia para empresas que querem crescer com mais clareza e melhor execução.</p>
+          <p data-i18n="footer.description">Consultoria em tecnologia para empresas que querem crescer com mais clareza e melhor execução.</p>
         </div>
         <div>
-          <h4>Navegação</h4>
+          <h4 data-i18n="footer.navigation">Navegação</h4>
           <ul>
-            <li><a href="#servicos">O que fazemos</a></li>
-            <li><a href="#metodo">Como trabalhamos</a></li>
-            <li><a href="#diferenciais">Diferenciais</a></li>
-            <li><a href="#manifesto">Manifesto</a></li>
+            <li><a href="#servicos" data-i18n="nav.services">O que fazemos</a></li>
+            <li><a href="#metodo" data-i18n="nav.method">Como trabalhamos</a></li>
+            <li><a href="#diferenciais" data-i18n="nav.differentials">Diferenciais</a></li>
+            <li><a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a></li>
           </ul>
         </div>
         <div>
-          <h4>Contato</h4>
+          <h4 data-i18n="footer.contact">Contato</h4>
           <a href="mailto:filipesoares.crespo@gmail.com" target="_blank" rel="noopener noreferrer">filipesoares.crespo@gmail.com</a>
           <br />
           <a href="https://wa.me/351913449529" target="_blank" rel="noopener noreferrer">+351 913 449 529</a>
         </div>
       </div>
       <div class="container footer-bottom">
-        <p>© <span id="year"></span> Brio. Todos os direitos reservados.</p>
+        <p>© <span id="year"></span> <span data-i18n="footer.rightsSuffix">Brio. Todos os direitos reservados.</span></p>
       </div>
     </footer>
 
