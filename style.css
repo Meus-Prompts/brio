@@ -91,11 +91,19 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.55rem;
   border-radius: 999px;
   padding: 0.72rem 1.25rem;
   text-decoration: none;
   font-weight: 600;
+  line-height: 1;
   transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.btn i,
+.btn span {
+  display: block;
+  line-height: 1;
 }
 
 .btn:hover {
@@ -271,6 +279,9 @@ h1 {
 .service-card-head h3 {
   margin: 0;
   flex: 1;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  align-self: center;
 }
 
 .service-icon {
@@ -280,6 +291,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
   border-radius: 18px;
   border: 1px solid rgba(201, 226, 77, 0.22);
   background: linear-gradient(145deg, rgba(201, 226, 77, 0.12), rgba(29, 62, 19, 0.34));
@@ -287,7 +299,9 @@ h1 {
 }
 
 .service-icon i {
+  display: block;
   font-size: 1.35rem;
+  line-height: 1;
   color: var(--primary-soft-2);
   animation: serviceFloat 3.4s ease-in-out infinite;
   transform-origin: center;
@@ -502,8 +516,7 @@ h1 {
   }
 
   .service-card-head h3 {
-    font-size: 1.02rem;
-    line-height: 1.25;
+    font-size: 1.3rem;
   }
 
   .service-icon {
