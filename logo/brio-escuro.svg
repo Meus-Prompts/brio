@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 258 114" role="img" aria-label="Brio">
+<title>Brio</title>
+<g fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round">
+  <path d="M12 12V100"/>
+  <circle cx="44" cy="70" r="30"/>
+  <path d="M100 100V74Q100 44 130 44"/>
+  <path d="M156 52V100"/>
+  <circle cx="212" cy="70" r="30"/>
+</g>
+<path fill="#b6da3e" fill-rule="evenodd" d="M156 47C148 37 140 30.5 140 19A16 16 0 0 1 172 19C172 30.5 164 37 156 47ZM156 12.5A6.5 6.5 0 1 0 156 25.5A6.5 6.5 0 1 0 156 12.5Z"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Brio">
+<title>Brio</title>
+<rect width="64" height="64" rx="14" fill="#123321"/>
+<path fill="#b6da3e" d="M32 56C22 44 13 36 13 25A19 19 0 0 1 51 25C51 36 42 44 32 56Z"/>
+<g fill="none" stroke="#123321" stroke-width="5" stroke-linecap="round"><path d="M26 12.5V35"/><circle cx="32.5" cy="28.5" r="6.5"/></g>
+</svg>
