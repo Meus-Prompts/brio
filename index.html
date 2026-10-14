@@ -1,290 +1,409 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brio | Sites, Google e reservas para negócios do Alto Minho</title>
     <meta
       name="description"
-      content="Brio — Consultoria em tecnologia para empresas que querem crescer com clareza, velocidade e boa execução."
-      data-i18n-attr="content"
-      data-i18n="meta.description"
+      content="A Brio trata do perfil no Google, faz o site e põe as reservas a funcionar para adegas, alojamentos locais, restaurantes e serviços de Monção, do Alto Minho e da Galiza. Diagnóstico grátis."
     />
-    <title data-i18n="meta.title">Brio | Tecnologia para crescimento de negócios</title>
+    <meta property="og:title" content="Brio | Sites, Google e reservas para negócios do Alto Minho" />
+    <meta
+      property="og:description"
+      content="Quando procuram no Google, aparece o seu negócio? Peça um diagnóstico grátis."
+    />
+    <meta property="og:image" content="logo/brio-og.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta name="theme-color" content="#123321" />
+    <link rel="icon" href="logo/brio-icone.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="logo/brio-icone.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header" id="topo">
-      <div class="container nav-wrap">
-        <a class="logo" href="#topo" aria-label="Página inicial Brio" data-i18n-attr="aria-label" data-i18n="header.homeAriaLabel">
-          <img src="brio_verde.png" alt="Brio" />
+    <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+    <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+      <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm0 18.15a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.28Z"
+        />
+      </symbol>
+    </svg>
+
+    <header class="header">
+      <div class="container header-row">
+        <a class="logo" href="#topo" aria-label="Brio, voltar ao início">
+          <img src="logo/brio-escuro.svg" alt="Brio" width="94" height="42" />
         </a>
 
-        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" data-i18n-attr="aria-label" data-i18n="header.menuToggleOpen">
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
           <span></span><span></span>
         </button>
 
-        <nav class="nav" aria-label="Navegação principal">
-          <a href="#servicos" data-i18n="nav.services">O que fazemos</a>
-          <a href="#metodo" data-i18n="nav.method">Como trabalhamos</a>
-          <a href="#diferenciais" data-i18n="nav.differentials">Diferenciais</a>
-          <a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a>
+        <nav class="nav" id="menu" aria-label="Navegação principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#para-quem">Para quem</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#perguntas">Perguntas</a>
+          <a href="#galiza" lang="es">Español</a>
         </nav>
-
-        <div class="header-actions">
-          <div class="language-switcher">
-            <label class="sr-only" for="language-select" data-i18n="header.languageLabel">Idioma do site</label>
-            <select id="language-select" aria-label="Idioma do site" data-i18n-attr="aria-label" data-i18n="header.languageLabel">
-              <option value="pt-BR">🇧🇷 Português (Brasil)</option>
-              <option value="pt-PT">🇵🇹 Português (Portugal)</option>
-              <option value="en">🇺🇸 English</option>
-              <option value="es">🇪🇸 Español</option>
-            </select>
-          </div>
-        </div>
       </div>
     </header>
 
-    <main>
-      <section class="hero" id="hero">
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="container hero-content reveal">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Consultoria tecnológica premium</p>
-          <h1 data-i18n="hero.title">Tecnologia que acelera seu negócio.</h1>
-          <p class="hero-subtitle" data-i18n="hero.subtitle">
-            Estratégia, design e engenharia para gerar resultado real.
-          </p>
-          <div class="hero-actions">
+    <main id="conteudo">
+      <section class="hero" id="topo" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 id="hero-title">Quando procuram no Google, aparece o seu negócio?</h1>
+            <p class="hero-lead">
+              Tratamos do seu perfil no Google, fazemos o site e pomos as reservas a funcionar.
+              Para adegas, alojamentos, restaurantes e serviços de Monção, do Alto Minho e da Galiza.
+            </p>
+            <div class="actions">
+              <a
+                class="button button--lime"
+                href="https://wa.me/351913449529?text=Ol%C3%A1!%20Gostava%20de%20pedir%20o%20diagn%C3%B3stico%20gr%C3%A1tis%20do%20meu%20neg%C3%B3cio%20no%20Google."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+                Pedir diagnóstico grátis
+                <span class="sr-only">(abre o WhatsApp numa nova janela)</span>
+              </a>
+              <a class="button button--outline" href="#servicos">Ver serviços</a>
+            </div>
+          </div>
+
+          <figure class="search" aria-labelledby="search-caption">
+            <div class="search-window" aria-hidden="true">
+              <div class="search-bar">
+                <svg class="search-icon" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+                <span class="search-query" data-query>adega de alvarinho em monção</span><span class="caret"></span>
+              </div>
+              <div class="result" data-result>
+                <div class="result-map">
+                  <span class="pin"></span>
+                </div>
+                <div class="result-body">
+                  <p class="result-name" data-name>O seu negócio</p>
+                  <p class="result-rating"><span class="stars">★★★★★</span> 4,9 <span class="muted" data-reviews>(128 avaliações)</span></p>
+                  <p class="result-meta" data-meta>Adega com provas e visitas</p>
+                  <p class="result-open" data-open>Aberto agora, fecha às 19:00</p>
+                  <div class="result-actions">
+                    <span>Ligar</span><span>Direções</span><span class="primary" data-action>Marcar prova</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <figcaption id="search-caption">
+              Exemplo do que um cliente vê quando o seu perfil está bem tratado.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="diagnostico" aria-labelledby="diagnostico-title">
+        <div class="container split">
+          <div class="split-copy">
+            <h2 id="diagnostico-title">Comece por saber como o veem hoje.</h2>
+            <p>
+              Analisamos o perfil do seu negócio no Google e entregamos-lhe uma folha simples, em
+              mão ou por WhatsApp, com o que está bem e o que está a afastar clientes.
+            </p>
+            <p>É grátis e não obriga a nada. Muitas melhorias pode fazê-las sozinho.</p>
             <a
-              class="btn btn-primary"
-              href="https://wa.me/351913449529"
+              class="button"
+              href="https://wa.me/351913449529?text=Ol%C3%A1!%20Gostava%20de%20pedir%20o%20diagn%C3%B3stico%20gr%C3%A1tis%20do%20meu%20neg%C3%B3cio%20no%20Google."
               target="_blank"
               rel="noopener noreferrer"
-            ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span data-i18n="cta.contact">Entrar em contato</span></a>
-            <a class="btn btn-secondary" href="#servicos" data-i18n="cta.services">Conhecer serviços</a>
+            >
+              <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+              Pedir diagnóstico grátis
+              <span class="sr-only">(abre o WhatsApp numa nova janela)</span>
+            </a>
+          </div>
+
+          <div class="sheet">
+            <p class="sheet-title">Diagnóstico do perfil no Google</p>
+            <p class="sheet-fields"><span>Negócio</span><span>Data</span></p>
+            <ul class="sheet-list">
+              <li>Aparece quando procuram o que faz, mais "Monção"</li>
+              <li>Horário certo, incluindo feriados e o mês de agosto</li>
+              <li>Fotos recentes do espaço e do trabalho</li>
+              <li>Avaliações respondidas, as boas e as más</li>
+              <li>Telefone, WhatsApp e site a funcionar no telemóvel</li>
+              <li>Informação em espanhol para quem vem da Galiza</li>
+            </ul>
+            <p class="sheet-foot">Feito por Brio, em Monção.</p>
           </div>
         </div>
       </section>
 
-      <section class="section" id="servicos">
+      <section class="section section--tint" id="servicos" aria-labelledby="servicos-title">
         <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow" data-i18n="servicesSection.eyebrow">O que fazemos</p>
-            <h2 data-i18n="servicesSection.title">Da estratégia à execução, ajudamos sua empresa a crescer com tecnologia.</h2>
-          </div>
-
-          <div class="cards-grid services-grid">
-            <article class="card service-card reveal">
-              <div class="service-card-head">
-                <div class="service-icon" aria-hidden="true">
-                  <i class="fa-solid fa-pen-ruler"></i>
-                </div>
-                <h3 data-i18n="services.design.title">Experiência & Design</h3>
-              </div>
-              <p data-i18n="services.design.description">Experiências simples, claras e bem desenhadas para produtos digitais que funcionam melhor.</p>
-              <ul>
-                <li data-i18n="services.design.items.0">UX</li>
-                <li data-i18n="services.design.items.1">Design</li>
-                <li data-i18n="services.design.items.2">Estratégia digital</li>
-              </ul>
-            </article>
-            <article class="card service-card reveal">
-              <div class="service-card-head">
-                <div class="service-icon" aria-hidden="true">
-                  <i class="fa-solid fa-list-check"></i>
-                </div>
-                <h3 data-i18n="services.delivery.title">Gestão & Entrega</h3>
-              </div>
-              <p data-i18n="services.delivery.description">Projetos com prioridade clara, ritmo constante e boa comunicação entre negócio e tecnologia.</p>
-              <ul>
-                <li data-i18n="services.delivery.items.0">Gestão de Projetos</li>
-                <li data-i18n="services.delivery.items.1">Priorização</li>
-                <li data-i18n="services.delivery.items.2">Execução iterativa</li>
-              </ul>
-            </article>
-            <article class="card service-card reveal">
-              <div class="service-card-head">
-                <div class="service-icon" aria-hidden="true">
-                  <i class="fa-solid fa-code"></i>
-                </div>
-                <h3 data-i18n="services.engineering.title">Engenharia de Software</h3>
-              </div>
-              <p data-i18n="services.engineering.description">Sistemas estáveis, integrações confiáveis e base técnica pronta para crescer com segurança.</p>
-              <ul>
-                <li data-i18n="services.engineering.items.0">Backend</li>
-                <li data-i18n="services.engineering.items.1">Arquitetura de sistemas</li>
-                <li data-i18n="services.engineering.items.2">Integrações críticas</li>
-              </ul>
-            </article>
-            <article class="card service-card reveal">
-              <div class="service-card-head">
-                <div class="service-icon" aria-hidden="true">
-                  <i class="fa-solid fa-server"></i>
-                </div>
-                <h3 data-i18n="services.operations.title">Plataforma & Operações</h3>
-              </div>
-              <p data-i18n="services.operations.description">Infraestrutura e operações para publicar melhor, reduzir risco e ganhar previsibilidade.</p>
-              <ul>
-                <li data-i18n="services.operations.items.0">DevOps</li>
-                <li data-i18n="services.operations.items.1">Infraestrutura</li>
-                <li data-i18n="services.operations.items.2">Confiabilidade operacional</li>
-              </ul>
-            </article>
-            <article class="card service-card reveal">
-              <div class="service-card-head">
-                <div class="service-icon" aria-hidden="true">
-                  <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </div>
-                <h3 data-i18n="services.ai.title">Inteligência Aplicada</h3>
-              </div>
-              <p data-i18n="services.ai.description">IA aplicada para automatizar tarefas, ganhar velocidade e abrir novas possibilidades de negócio.</p>
-              <ul>
-                <li data-i18n="services.ai.items.0">IA</li>
-                <li data-i18n="services.ai.items.1">Automação</li>
-                <li data-i18n="services.ai.items.2">Decisão orientada por dados</li>
-              </ul>
-            </article>
-            <article class="card service-card reveal">
-              <div class="service-card-head">
-                <div class="service-icon" aria-hidden="true">
-                  <i class="fa-solid fa-compass-drafting"></i>
-                </div>
-                <h3 data-i18n="services.consulting.title">Consultoria em Tecnologia</h3>
-              </div>
-              <p data-i18n="services.consulting.description">Direção técnica clara para transformar problemas complexos em próximos passos viáveis.</p>
-              <ul>
-                <li data-i18n="services.consulting.items.0">Consultoria em tecnologia</li>
-                <li data-i18n="services.consulting.items.1">Planejamento de evolução</li>
-                <li data-i18n="services.consulting.items.2">Governança técnica</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="metodo">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow" data-i18n="methodSection.eyebrow">Como trabalhamos</p>
-            <h2 data-i18n="methodSection.title">Trabalhamos com clareza, foco e entregas consistentes.</h2>
-          </div>
-
-          <div class="timeline">
-            <article class="step reveal">
-              <span>01</span>
-              <h3 data-i18n="method.steps.0.title">Discovery e estratégia</h3>
-              <p data-i18n="method.steps.0.description">Entendemos o contexto, os objetivos e o que mais vale atacar primeiro.</p>
-            </article>
-            <article class="step reveal">
-              <span>02</span>
-              <h3 data-i18n="method.steps.1.title">Priorização orientada a impacto</h3>
-              <p data-i18n="method.steps.1.description">Organizamos prioridades para concentrar esforço no que gera mais resultado.</p>
-            </article>
-            <article class="step reveal">
-              <span>03</span>
-              <h3 data-i18n="method.steps.2.title">Execução iterativa</h3>
-              <p data-i18n="method.steps.2.description">Executamos em ciclos curtos, com visibilidade do andamento e ajustes rápidos.</p>
-            </article>
-            <article class="step reveal">
-              <span>04</span>
-              <h3 data-i18n="method.steps.3.title">Evolução contínua e inovação</h3>
-              <p data-i18n="method.steps.3.description">Medimos o que funciona, ajustamos a rota e evoluímos de forma contínua.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="diferenciais">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="eyebrow" data-i18n="benefitsSection.eyebrow">Diferenciais Brio</p>
-            <h2 data-i18n="benefitsSection.title">Tecnologia bem aplicada para fazer o negócio avançar.</h2>
-          </div>
-
-          <div class="cards-grid benefits-grid">
-            <article class="card reveal">
-              <h3 data-i18n="benefits.items.0.title">Negócio + tecnologia</h3>
-              <p data-i18n="benefits.items.0.description">Tecnologia conectada ao que a empresa precisa vender, operar e crescer.</p>
-            </article>
-            <article class="card reveal">
-              <h3 data-i18n="benefits.items.1.title">Alto padrão de entrega</h3>
-              <p data-i18n="benefits.items.1.description">Entregas bem feitas, com base técnica sólida e atenção aos detalhes.</p>
-            </article>
-            <article class="card reveal">
-              <h3 data-i18n="benefits.items.2.title">Times e processos maduros</h3>
-              <p data-i18n="benefits.items.2.description">Processos simples e comunicação clara para tomar decisões com mais segurança.</p>
-            </article>
-            <article class="card reveal">
-              <h3 data-i18n="benefits.items.3.title">Escala e eficiência</h3>
-              <p data-i18n="benefits.items.3.description">Estruturas mais eficientes para crescer sem criar gargalos desnecessários.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section manifesto" id="manifesto">
-        <div class="container reveal">
-          <p class="eyebrow" data-i18n="manifesto.eyebrow">Manifesto</p>
-          <h2 data-i18n="manifesto.title">
-            Tecnologia boa resolve problema, melhora operação e abre espaço para crescer.
-          </h2>
-          <p data-i18n="manifesto.description">
-            Atuamos ao lado de empresas que querem tomar boas decisões e executar melhor com tecnologia.
+          <h2 id="servicos-title">O que fazemos.</h2>
+          <p class="lead">
+            Começa pelo que precisa agora e acrescenta o resto quando fizer sentido. Cada trabalho
+            tem âmbito e preço fechados por escrito antes de começar.
           </p>
+
+          <div class="services">
+            <article class="service">
+              <header>
+                <h3>Presença</h3>
+                <p>Para quem quer ser encontrado.</p>
+              </header>
+              <ul>
+                <li>Perfil no Google completo: categorias, horários, fotos e serviços</li>
+                <li>Site de uma página, rápido no telemóvel</li>
+                <li>Botões para ligar, falar no WhatsApp e chegar até si</li>
+                <li>Domínio e e-mail profissional em seu nome</li>
+              </ul>
+            </article>
+
+            <article class="service service--main">
+              <header>
+                <h3>Profissional</h3>
+                <p>Para quem quer receber reservas e marcações.</p>
+              </header>
+              <ul>
+                <li>Tudo o que está na Presença</li>
+                <li>Site com várias páginas, em português, espanhol e inglês</li>
+                <li>Reservas e marcações diretas no seu site: quartos, provas, mesas, consultas</li>
+                <li>Menos comissões pagas a plataformas de reservas</li>
+                <li>Pedido automático de avaliação a quem já foi cliente</li>
+              </ul>
+            </article>
+
+            <article class="service">
+              <header>
+                <h3>Manutenção</h3>
+                <p>Uma mensalidade, para não ter de pensar nisso.</p>
+              </header>
+              <ul>
+                <li>Alojamento, segurança e cópias de segurança do site</li>
+                <li>Alterações de horários, preços, menus e fotos</li>
+                <li>Perfil no Google sempre em dia</li>
+                <li>Um resumo mensal simples: visitas, chamadas e reservas</li>
+              </ul>
+            </article>
+
+            <article class="service">
+              <header>
+                <h3>Assistente no WhatsApp</h3>
+                <p>Responde quando não pode atender.</p>
+              </header>
+              <ul>
+                <li>Responde às perguntas de sempre: horários, preços, como chegar</li>
+                <li>Faz marcações e envia lembretes, em português e espanhol</li>
+                <li>Diz ao cliente que é uma resposta automática</li>
+                <li>Passa-lhe a conversa quando não sabe responder</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="section final-cta" id="contato">
-        <div class="container reveal">
-          <h2 data-i18n="finalCta.title">Se a tecnologia precisa destravar crescimento, vamos conversar.</h2>
-          <p data-i18n="finalCta.description">Podemos entender o seu momento e definir o melhor próximo passo.</p>
+      <section class="section" id="para-quem" aria-labelledby="para-quem-title">
+        <div class="container">
+          <h2 id="para-quem-title">Para quem trabalhamos.</h2>
+          <dl class="audience">
+            <div>
+              <dt>Adegas e quintas</dt>
+              <dd>Visitas e provas marcadas no site, em três línguas, para quem vem conhecer o Alvarinho.</dd>
+            </div>
+            <div>
+              <dt>Alojamento local e turismo rural</dt>
+              <dd>Reservas diretas no seu site, para depender menos das plataformas e das comissões.</dd>
+            </div>
+            <div>
+              <dt>Restaurantes e cafés</dt>
+              <dd>Menu em português e espanhol com código QR, horários certos no Google e reservas de mesa.</dd>
+            </div>
+            <div>
+              <dt>Termas, saúde e bem-estar</dt>
+              <dd>Marcações online e lembretes automáticos, para haver menos faltas.</dd>
+            </div>
+            <div>
+              <dt>Serviços do dia a dia</dt>
+              <dd>Cabeleireiros, oficinas, explicações, clínicas: aparecer a quem procura na zona.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section section--straw" id="galiza" aria-labelledby="galiza-title">
+        <div class="container bridge">
+          <div>
+            <h2 id="galiza-title">Dos dois lados da ponte.</h2>
+            <p>
+              Muitos clientes de Monção, Valença e Melgaço vêm da Galiza. Um perfil e um site em
+              espanhol ajudam-nos a escolher o seu negócio e não o do lado.
+            </p>
+          </div>
+          <div lang="es" class="bridge-es">
+            <h3>¿Tiene un negocio en Galicia?</h3>
+            <p>
+              En Salvaterra, Tui, As Neves o Arbo, le atendemos en español. Perfil de Google,
+              página web y reservas, con el mismo trato cercano.
+            </p>
+            <a
+              class="button"
+              href="https://wa.me/351913449529?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20Brio%20para%20mi%20negocio."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+              Escribir por WhatsApp
+              <span class="sr-only">(se abre en una nueva ventana)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="como-funciona" aria-labelledby="como-funciona-title">
+        <div class="container">
+          <h2 id="como-funciona-title">Como funciona.</h2>
+          <ol class="steps">
+            <li>
+              <h3>Diagnóstico grátis</h3>
+              <p>Vemos o seu perfil no Google e mostramos o que melhorar. No seu negócio ou por WhatsApp.</p>
+            </li>
+            <li>
+              <h3>Proposta fechada</h3>
+              <p>Recebe por escrito o que fazemos, o prazo e o preço. Só avançamos se fizer sentido para si.</p>
+            </li>
+            <li>
+              <h3>Vê antes de publicar</h3>
+              <p>Acompanha o site a ser feito e ajustamos consigo o que for preciso.</p>
+            </li>
+            <li>
+              <h3>No ar e acompanhado</h3>
+              <p>Publicamos, explicamos o essencial e, se quiser, ficamos com a manutenção.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="quem" aria-labelledby="quem-title">
+        <div class="container">
+          <h2 id="quem-title">Quem está por trás.</h2>
+          <p class="lead">
+            Uma equipa pequena, de propósito: fala diretamente com quem faz o trabalho, sem
+            intermediários.
+          </p>
+          <ul class="team">
+            <li class="person">
+              <span class="avatar" aria-hidden="true">FC</span>
+              <div>
+                <h3>Filipe Crespo</h3>
+                <p class="role">Engenheiro de software</p>
+                <p>
+                  Mais de 10 anos a criar produtos digitais em Portugal e no Brasil. Vive em Monção
+                  e é quem passa pelo seu negócio.
+                </p>
+                <a href="https://www.linkedin.com/in/filipescrespo/" target="_blank" rel="noopener noreferrer"
+                  >LinkedIn<span class="sr-only"> de Filipe Crespo (abre numa nova janela)</span></a
+                >
+              </div>
+            </li>
+            <li class="person">
+              <span class="avatar" aria-hidden="true">GT</span>
+              <div>
+                <h3>Gilson Terra</h3>
+                <p class="role">Desenvolvedor web sénior e analista de sistemas</p>
+                <p>
+                  Constrói sites e sistemas web e garante que tudo funciona como deve, do primeiro
+                  esboço à manutenção.
+                </p>
+                <a href="https://www.linkedin.com/in/gilsonterra" target="_blank" rel="noopener noreferrer"
+                  >LinkedIn<span class="sr-only"> de Gilson Terra (abre numa nova janela)</span></a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="perguntas" aria-labelledby="perguntas-title">
+        <div class="container faq">
+          <h2 id="perguntas-title">Perguntas frequentes.</h2>
+          <details>
+            <summary>Preciso de perceber de tecnologia?</summary>
+            <p>Não. Tratamos de tudo e explicamos o que for preciso em linguagem simples.</p>
+          </details>
+          <details>
+            <summary>Quanto custa?</summary>
+            <p>
+              Depende do que o seu negócio precisa. Depois do diagnóstico grátis, enviamos uma
+              proposta com preço fechado. Não há custos escondidos.
+            </p>
+          </details>
+          <details>
+            <summary>Já tenho página no Facebook. Preciso de site?</summary>
+            <p>
+              Nem sempre. Às vezes basta tratar bem do perfil no Google. Se for esse o caso,
+              dizemos-lho no diagnóstico.
+            </p>
+          </details>
+          <details>
+            <summary>O site e o domínio ficam meus?</summary>
+            <p>Sim. Ficam em seu nome, mesmo que deixe de trabalhar connosco.</p>
+          </details>
+          <details>
+            <summary>O assistente no WhatsApp responde sozinho a tudo?</summary>
+            <p>
+              Não. Responde ao que o negócio lhe ensinou, avisa que é uma resposta automática e
+              passa-lhe a conversa quando não sabe. Os dados dos seus clientes são tratados de
+              acordo com o RGPD.
+            </p>
+          </details>
+          <details>
+            <summary>Vêm ao meu negócio?</summary>
+            <p>
+              Sim, em Monção, Valença, Melgaço, Arcos de Valdevez, Paredes de Coura e do outro lado
+              da ponte. Para o resto do país, falamos por videochamada.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="cta" id="contacto" aria-labelledby="contacto-title">
+        <div class="container cta-inner">
+          <h2 id="contacto-title">Quer saber como o seu negócio aparece no Google?</h2>
+          <p>Mande o nome do seu negócio por WhatsApp. Respondemos em até 2 dias úteis.</p>
           <a
-            class="btn btn-primary"
-            href="https://wa.me/351913449529"
+            class="button button--lime"
+            href="https://wa.me/351913449529?text=Ol%C3%A1!%20Gostava%20de%20pedir%20o%20diagn%C3%B3stico%20gr%C3%A1tis%20do%20meu%20neg%C3%B3cio%20no%20Google."
             target="_blank"
             rel="noopener noreferrer"
-          ><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span data-i18n="cta.contact">Entrar em contato</span></a>
+          >
+            <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp" /></svg>
+            Pedir diagnóstico grátis
+            <span class="sr-only">(abre o WhatsApp numa nova janela)</span>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container footer-grid">
-        <div>
-          <a class="logo" href="#topo" aria-label="Página inicial Brio" data-i18n-attr="aria-label" data-i18n="footer.homeAriaLabel">
-            <img src="brio_verde.png" alt="Brio" />
-          </a>
-          <p data-i18n="footer.description">Consultoria em tecnologia para empresas que querem crescer com mais clareza e melhor execução.</p>
-        </div>
-        <div>
-          <h4 data-i18n="footer.navigation">Navegação</h4>
-          <ul>
-            <li><a href="#servicos" data-i18n="nav.services">O que fazemos</a></li>
-            <li><a href="#metodo" data-i18n="nav.method">Como trabalhamos</a></li>
-            <li><a href="#diferenciais" data-i18n="nav.differentials">Diferenciais</a></li>
-            <li><a href="#manifesto" data-i18n="nav.manifesto">Manifesto</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 data-i18n="footer.contact">Contato</h4>
-          <a href="mailto:filipesoares.crespo@gmail.com" target="_blank" rel="noopener noreferrer">filipesoares.crespo@gmail.com</a>
-          <br />
-          <a href="https://wa.me/351913449529" target="_blank" rel="noopener noreferrer">+351 913 449 529</a>
-        </div>
-      </div>
-      <div class="container footer-bottom">
-        <p>© <span id="year"></span> <span data-i18n="footer.rightsSuffix">Brio. Todos os direitos reservados.</span></p>
+      <div class="container footer-row">
+        <img src="logo/brio-escuro.svg" alt="Brio" width="80" height="35" />
+        <p>Sites, Google e reservas para negócios do Alto Minho e da Galiza.</p>
+        <p>Monção, Portugal. © <span id="ano">2026</span> Brio</p>
       </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
