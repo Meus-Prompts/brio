@@ -1,0 +1,16 @@
+{
+  "name": "Brio",
+  "short_name": "Brio",
+  "start_url": "/brio/",
+  "scope": "/brio/",
+  "display": "standalone",
+  "background_color": "#123321",
+  "theme_color": "#123321",
+  "icons": [
+    {
+      "src": "logo/brio-icone.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

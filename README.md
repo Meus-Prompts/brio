@@ -34,6 +34,11 @@ Acesse:
 
 ## Estrutura
 
-- `index.html` → estrutura e conteúdo
-- `style.css` → visual premium responsivo
-- `script.js` → interações, animações e integração Vanta.js
+- `index.html` e `es/index.html` → páginas em português e espanhol
+- `privacidade.html`, `es/privacidad.html`, `404.html` → páginas de apoio
+- `style.css`, `script.js`, `fontes/` → estilo, interações e fontes locais
+- `sitemap.xml`, `robots.txt`, `site.webmanifest` → SEO
+
+## Ao ligar um domínio próprio
+
+Trocar `https://meus-prompts.github.io/brio/` pelo novo endereço em todos os ficheiros e, em `404.html` e `site.webmanifest`, trocar `/brio/` por `/`. O `robots.txt` só é lido pelos motores de busca na raiz de um domínio próprio.

@@ -8,18 +8,21 @@ function setMenu(open) {
   menuToggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
 }
 
-menuToggle.addEventListener("click", () => setMenu(!nav.classList.contains("is-open")));
-nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setMenu(false)));
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") setMenu(false);
-});
+if (menuToggle && nav) {
+  menuToggle.addEventListener("click", () => setMenu(!nav.classList.contains("is-open")));
+  nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setMenu(false)));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") setMenu(false);
+  });
+}
 
 // Ano no rodapé.
-document.getElementById("ano").textContent = String(new Date().getFullYear());
+const ano = document.getElementById("ano");
+if (ano) ano.textContent = String(new Date().getFullYear());
 
 // Pesquisa do hero: escreve uma pesquisa e mostra o resultado correspondente.
 // Com movimento reduzido fica o primeiro exemplo, parado.
-const searches = [
+const searchesPt = [
   {
     query: "adega de alvarinho em monção",
     name: "O seu negócio",
@@ -53,6 +56,43 @@ const searches = [
     action: "Marcar",
   },
 ];
+
+const searchesEs = [
+  {
+    query: "bodega de alvariño en monção",
+    name: "Su negocio",
+    reviews: "(128 reseñas)",
+    meta: "Bodega con catas y visitas",
+    open: "Abierto, cierra a las 19:00",
+    action: "Reservar cata",
+  },
+  {
+    query: "alojamiento rural en tui",
+    name: "Su negocio",
+    reviews: "(86 reseñas)",
+    meta: "Casa rural, 4 habitaciones",
+    open: "Reserva directa disponible",
+    action: "Reservar",
+  },
+  {
+    query: "restaurante abierto en salvaterra",
+    name: "Su negocio",
+    reviews: "(212 reseñas)",
+    meta: "Restaurante, cocina gallega",
+    open: "Abierto, cierra a las 23:00",
+    action: "Reservar mesa",
+  },
+  {
+    query: "peluquería en as neves",
+    name: "Su negocio",
+    reviews: "(64 reseñas)",
+    meta: "Peluquería y barbería",
+    open: "Abierto, cierra a las 20:00",
+    action: "Pedir cita",
+  },
+];
+
+const searches = document.documentElement.lang === "es" ? searchesEs : searchesPt;
 
 const queryEl = document.querySelector("[data-query]");
 const resultEl = document.querySelector("[data-result]");
