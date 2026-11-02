@@ -37,7 +37,7 @@ Acesse:
 - `index.html` e `es/index.html` → páginas em português e espanhol
 - `privacidade.html`, `es/privacidad.html`, `404.html` → páginas de apoio
 - `style.css`, `script.js`, `fontes/` → estilo, interações e fontes locais
-- `sitemap.xml`, `robots.txt`, `site.webmanifest` → SEO
+- `sitemap.xml`, `robots.txt`, `site.webmanifest`, `llms.txt` → SEO e assistentes de IA
 
 ## Ao ligar um domínio próprio
 

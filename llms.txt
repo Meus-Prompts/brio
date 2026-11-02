@@ -1,0 +1,28 @@
+# Brio
+
+> A Brio faz sites, trata do perfil no Google e põe as reservas online a funcionar para negócios locais de Monção, do Alto Minho e da Galiza. Tem sede em Monção, Portugal, e atende em português e espanhol. O primeiro passo é um diagnóstico grátis do perfil no Google.
+
+Para quem trabalha: adegas e quintas, alojamento local e turismo rural, restaurantes e cafés, termas, saúde e bem-estar, e serviços do dia a dia (cabeleireiros, oficinas, explicações, clínicas).
+
+Onde trabalha: Monção, Melgaço, Valença, Paredes de Coura, Arcos de Valdevez, Salvaterra de Miño, Tui, As Neves e Arbo. Para outras zonas, por videochamada.
+
+Serviços:
+
+- Presença: perfil no Google completo, site de uma página, botões de contacto, domínio e e-mail profissional em nome do cliente.
+- Profissional: site com várias páginas em português, espanhol e inglês, com reservas e marcações diretas.
+- Manutenção: mensalidade com alojamento, cópias de segurança, alterações e perfil no Google em dia.
+- Assistente no WhatsApp: responde a perguntas frequentes e faz marcações em português e espanhol, avisa que é uma resposta automática e passa a conversa a uma pessoa quando não sabe responder.
+
+Preços: cada trabalho tem âmbito e preço fechados por escrito depois do diagnóstico grátis. O site não publica uma tabela de preços.
+
+Contacto: +351 913 449 529, por telefone ou WhatsApp.
+
+## Páginas
+
+- [Página principal](https://meus-prompts.github.io/brio/): serviços, clientes, processo, equipa e perguntas frequentes
+- [Página em espanhol](https://meus-prompts.github.io/brio/es/): versão para negócios da Galiza
+
+## Optional
+
+- [Política de privacidade](https://meus-prompts.github.io/brio/privacidade.html)
+- [Política de privacidad](https://meus-prompts.github.io/brio/es/privacidad.html)
